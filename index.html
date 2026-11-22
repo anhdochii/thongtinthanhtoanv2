@@ -320,24 +320,16 @@
             if (uri.length - fb2.length > 0) window.history.replaceState({}, document.title, fb2);
             //]]>
         </script>
+  <script text="type/javascript">
+      // ADD SOUND NHẠC TẠI ĐÂY
+	const ThanhDieu_List_Sounds = [
+	"//thanhdieu.com/files/Em-Nào-Có-Tội.mp3",
+	"//thanhdieu.com/files/Anh-Đã-Quen-Với-Cô-Đơn.mp3",
+	"//thanhdieu.com/files/Về-Bên-Anh.mp3",
+];
         <script data-cfasync="false" src="email.min.js"></script>
         <script src="assets/js/jquery-3.4.1.min.js"></script>
         <script src="assets/js/plugins.min.js"></script>
-		<!-- NHẠC NỀN TỰ ĐỘNG PHÁT -->
-		<audio id="bg-music" loop>
-   		<source src="https://youtu.be/nmm5kEZkS8Q?si=Kgv9LUOFCC6n_kKs.mp3" type="audio/mpeg">
-		</audio>
-		<script>
-    const audio = document.getElementById("bg-music");
-    function startMusic() {
-        audio.play().catch(() => {
-            document.addEventListener("click", () => audio.play(), { once: true });
-            document.addEventListener("touchstart", () => audio.play(), { once: true });
-        });
-    					}
-    	window.addEventListener("load", startMusic);
-		</script>
-
         <script src="assets/js/common.js"></script>
         <script src="assets/demo/plugins-demo.js"></script>
 	     <!DOCTYPE html>
@@ -346,7 +338,7 @@
 <title>Vi du the marquee trong HTML</title>
 </head>
 <body>
-  <marquee id="marq" scrollamount="3" direction="left" loop="50" scrolldelay="0" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"style="border:blue 2px SOLID"> Ít <font color="yellow"> thì 5 cá </font> Nhiều <font color="pink"> thì tên 50 cá nhé :33 </marquee>
+  <marquee id="marq" scrollamount="3" direction="left" loop="50" scrolldelay="0" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()"style="border:blue 2px SOLID"> Ít <font color="yellow"> thì 5 cá </font> Nhiều <font color="pink"> thì trên 50 cá nhé :33 </marquee>
 
     </body>
 </html>
