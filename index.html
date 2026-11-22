@@ -335,13 +335,16 @@
 			</marquee>
 			
 			<!-- Nhạc nền -->
-			<audio id="backgroundMusic" autoplay loop>
-			    <source src="img/T1TGA.mp3" type="audio/mpeg">
-			</audio>
-			
-			<!-- Nút bật nhạc nếu trình duyệt chặn tự động phát -->
-			<button onclick="document.getElementById('backgroundMusic').play()">
-			    🎵 BẬT NHẠC
-			</button>
+					<audio id="backgroundMusic" autoplay loop>
+		    <source src="music/T1TGA.mp3" type="audio/mpeg">
+		</audio>
+		
+		<script>
+		const music = document.getElementById("backgroundMusic");
+		
+		music.play().catch(() => {
+		    console.log("Trình duyệt đang chặn autoplay.");
+		});
+		</script>
 </div>
 </html>
